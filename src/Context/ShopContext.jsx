@@ -21,6 +21,7 @@ const ShopContextProvider = (props) => {
 
     const [cartItem, setCartItem] = useState(getDefaultCart())
 
+
     function addToCart(itemId) {
         setCartItem((previous) => ({ ...previous, [itemId]: previous[itemId] + 1 }))
         // ถ้า console.log(cartItem) เลย มันจะยังได้ค่า 0 เพราะมันยังไม่วนขึ้นไป set ค่าจากข้างบนใหม่
